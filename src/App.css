@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+#socialIcon {
+  left: 60%;
+  height: 25;
+  width: 25;  
+}

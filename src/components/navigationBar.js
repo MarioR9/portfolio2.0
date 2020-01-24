@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav} from 'react-bootstrap';
+import { SocialIcon } from 'react-social-icons';
 
 export default class NavigationBar extends React.Component{
     render(){
@@ -9,7 +10,10 @@ export default class NavigationBar extends React.Component{
                 <Navbar.Brand href="/home">Mario Rodriguez</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto" ></Nav>
+                    <Nav className="mr-auto" >
+                    <SocialIcon network="github" style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
+                    <SocialIcon network="linkedin" style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/" />
+                    </Nav>
                     <Nav className="navbar-left">
                     <Nav.Link href="/about">About</Nav.Link>
                     <Nav.Link href="/projects">Projects</Nav.Link>
