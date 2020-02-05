@@ -5,7 +5,7 @@ export default class Home extends React.Component{
         return(
             <div>
                <h1>Home Page</h1>
-          
+                    intro TO page (presentation)
             </div>
         )
     }
