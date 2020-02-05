@@ -28,6 +28,7 @@ class App extends React.Component {
             <Route path="/about" component={About}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
+            <Route component={NotFound} />
           </Switch>
           </div>
       </Router>
@@ -35,5 +36,5 @@ class App extends React.Component {
     );
   }
 }
-
+const NotFound = () => <div>Not found</div>
 export default App;
