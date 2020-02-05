@@ -14,6 +14,17 @@ export default class Projects extends React.Component{
                     <br></br>
                     Tonester
                 </p>
+                <br></br>
+                <h1>Technologies used</h1>
+                <h2>javascript <br></br>
+                react <br></br>
+                ruby on rails <br></br>
+                spotify <br></br>
+                cloudinary <br></br>
+                ibm watson <br></br>
+                pupetter <br></br>
+                node <br></br>
+                </h2>
             </div>
         )
     }
