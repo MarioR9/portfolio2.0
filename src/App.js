@@ -3,7 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,Redirect
 } from "react-router-dom";
 import About from './components/about';
 import Projects from './components/projects';
@@ -23,7 +23,8 @@ class App extends React.Component {
       <Router>
         <div className='main'>
           <Switch>
-            <Route path='/' exact component={Home}/>
+            <Route exact path='/'><Redirect to="/home" /></Route>
+            <Route path='/home' component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/contact" component={Contact}/>
