@@ -16,10 +16,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <div>
-          <h1>NavigationBar</h1>
-          <NavigationBar/>
-        </div>
+       
       <Router>
         <div className='main'>
           <Switch>
