@@ -36,5 +36,5 @@ class App extends React.Component {
     );
   }
 }
-const NotFound = () => <div>Not found</div>
+const NotFound = () => <div>Error 404! Page notFound</div>
 export default App;
