@@ -1,17 +1,27 @@
-import React from 'react';
+import React , { useState }  from 'react';
 import { Navbar, Nav} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 export default class NavigationBar extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+          iconColor: "#f5eaea"
+        };
+      }
+    handleIconColorChange=()=>{
+        this.setState({ iconColor: "red" })
+    }  
+
     render(){
         return(
             <div>
                 <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
                 <Navbar.Brand href="/home">Mario Rodriguez
                 &nbsp;
-                <SocialIcon network="github" bgColor="#f5eaea" style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
+                <SocialIcon network="github" onMouseOver={this.handleIconColorChange} bgColor={this.state.iconColor} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
                 &nbsp;
-                <SocialIcon network="linkedin" bgColor="#f5eaea" style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/"/>
+                <SocialIcon network="linkedin" onMouseOver={this.handleIconColorChange} bgColor={this.state.iconColor} style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
