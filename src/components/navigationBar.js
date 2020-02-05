@@ -10,21 +10,21 @@ export default class NavigationBar extends React.Component{
           iconLinkedin: "white"
         };
       }
-    // Color change on mouse over
-    // handleIconColorGithub=()=>{
-    //     if(this.state.iconGithub === "white"){
-    //         this.setState({ iconGithub: "#b831ee" })
-    //     }else{
-    //         this.setState({ iconGithub: "white" })
-    //     }
-    // }
-    // handleIconColorLinkedin=()=>{
-    //     if(this.state.iconLinkedin === "white"){
-    //         this.setState({ iconLinkedin: "#3e86f3" })
-    //     }else{
-    //         this.setState({ iconLinkedin: "white" })
-    //     }
-    // }  
+    // Color change onmouseenter
+    handleIconColorGithub=()=>{
+        if(this.state.iconGithub === "white"){
+            this.setState({ iconGithub: "#b0aeb1" })
+        }else{
+            this.setState({ iconGithub: "white" })
+        }
+    }
+    handleIconColorLinkedin=()=>{
+        if(this.state.iconLinkedin === "white"){
+            this.setState({ iconLinkedin: "#3e86f3" })
+        }else{
+            this.setState({ iconLinkedin: "white" })
+        }
+    }  
 
     render(){
         return(
