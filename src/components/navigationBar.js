@@ -6,16 +6,25 @@ export default class NavigationBar extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-          iconColor: "#f5eaea"
+          iconGithub: "white",
+          iconLinkedin: "white"
         };
       }
-    handleIconColorChange=()=>{
-        if(this.state.iconColor === "#f5eaea"){
-            this.setState({ iconColor: "red" })
-        }else{
-            this.setState({ iconColor: "#f5eaea" })
-        }
-    } 
+    // Color change on mouse over
+    // handleIconColorGithub=()=>{
+    //     if(this.state.iconGithub === "white"){
+    //         this.setState({ iconGithub: "#b831ee" })
+    //     }else{
+    //         this.setState({ iconGithub: "white" })
+    //     }
+    // }
+    // handleIconColorLinkedin=()=>{
+    //     if(this.state.iconLinkedin === "white"){
+    //         this.setState({ iconLinkedin: "#3e86f3" })
+    //     }else{
+    //         this.setState({ iconLinkedin: "white" })
+    //     }
+    // }  
 
     render(){
         return(
@@ -23,9 +32,9 @@ export default class NavigationBar extends React.Component{
                 <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
                 <Navbar.Brand href="/home">Mario R
                 &nbsp;
-                <SocialIcon network="github" onMouseOver={this.handleIconColorChange} bgColor={this.state.iconColor} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
+                <SocialIcon network="github" onMouseEnter={this.handleIconColorGithub} onMouseLeave={this.handleIconColorGithub} bgColor={this.state.iconGithub} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
                 &nbsp;
-                <SocialIcon network="linkedin" onMouseOver={this.handleIconColorChange} bgColor={this.state.iconColor} style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/"/>
+                <SocialIcon network="linkedin" onMouseEnter={this.handleIconColorLinkedin} onMouseLeave={this.handleIconColorLinkedin} bgColor={this.state.iconLinkedin} style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
