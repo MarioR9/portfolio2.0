@@ -50,10 +50,14 @@ export default class NavigationBar extends React.Component{
                     <Nav className="mr-auto" ></Nav>
                     <Nav className="navbar-left">
                         <Nav.Link href="/home">Home</Nav.Link>
+                        &nbsp;
                         <Nav.Link href="/about">About</Nav.Link>
+                        &nbsp;
                         <Nav.Link href="/projects">Projects</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        &nbsp;
                         <Nav.Link href="./assets/MR_Resume.pdf" download="Mario_Rodriguez_Resume">Resume</Nav.Link>
+                        &nbsp;
+                        <Nav.Link className='contactBorder' href="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>
