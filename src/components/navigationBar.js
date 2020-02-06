@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav} from 'react-bootstrap';
+import { Navbar, Nav, Image} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 export default class NavigationBar extends React.Component{
@@ -29,8 +29,17 @@ export default class NavigationBar extends React.Component{
     render(){
         return(
             <div>
-                <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
-                <Navbar.Brand href="/home">Mario R
+                <Navbar  bg="dark" expand="lg" variant="dark" fixed="top">
+                <Navbar.Brand href="/home">
+                &nbsp;
+                <img
+                    alt=""
+                    src="./assets/logo.png"
+                    width="45"
+                    height="45"
+                    className="d-inline-block align-top"
+                />{' '}
+                &nbsp;
                 &nbsp;
                 <SocialIcon network="github" onMouseEnter={this.handleIconColorGithub} onMouseLeave={this.handleIconColorGithub} bgColor={this.state.iconGithub} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
                 &nbsp;
