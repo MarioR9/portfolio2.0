@@ -41,11 +41,11 @@
   height: 25;
   width: 25;  
 }
-.main {
+/* .main {
   position: relative;
   top: 10px;
   border: solid; color: red;
-}
+} */
 
 .test-Color{
   color: #b0aeb1;
@@ -54,6 +54,15 @@
 .base-color {
   color: #222427;
 }
-.home-page {
+.homePage {
   background-color: #333a40;
+  position:fixed;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100%;
+  height: 100%;
 }
