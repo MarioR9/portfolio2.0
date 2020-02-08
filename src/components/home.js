@@ -1,10 +1,10 @@
 import React from 'react'
-import {Image} from 'react-bootstrap';
+
 export default class Home extends React.Component{
     render(){
         return(
             <div className='homePage'>
-                    <div class="container">
+                    <div class="containerAnimation">
                     <div class="dot dot-1"></div>
                     <div class="dot dot-2"></div>
                     <div class="dot dot-3"></div>

@@ -17,7 +17,6 @@ class App extends React.Component {
     return (
       <div>
         <div>
-          <h1>NavigationBar</h1>
           <NavigationBar/>
         </div>
       <Router>

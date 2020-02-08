@@ -41,11 +41,12 @@
   height: 25;
   width: 25;  
 }
-/* .main {
-  position: relative;
-  top: 10px;
-  border: solid; color: red;
-} */
+
+// .main {
+//   position: relative;
+//   top: 10px;
+//   border: solid; color: red;
+// } 
 
 .test-Color{
   color: #b0aeb1;
@@ -78,10 +79,10 @@
 body, html {
   width: 100%;
   height: 100%;
-  background-color: #f8f4d5;
+  background-color: #ffffff;
 }
 
-.container {
+.containerAnimation {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -108,17 +109,17 @@ body, html {
 
 .dot-3 {
   background-color: white;
-  animation: dot-3-move 6s ease infinite, index 6s ease infinite;
+  animation: dot-3-move 6s ease infinite, index 4s ease infinite;
 }
 
 .dot-2 {
   background-color: white;
-  animation: dot-2-move 3s ease infinite, index 6s -4s ease infinite;
+  animation: dot-2-move 3s ease infinite, index 4s -4s ease infinite;
 }
 
 .dot-1 {
   background-color: white;
-  animation: dot-1-move 3s ease infinite, index 6s -2s ease infinite;
+  animation: dot-1-move 3s ease infinite, index 4s -2s ease infinite;
 }
 
 @keyframes dot-3-move {
@@ -157,3 +158,21 @@ body, html {
   66.6% {z-index: 1}
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//about divs
+.about-Header {
+  overflow: auto;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+.img2 {
+  float: right;
+  width: 30%;
+  height: 30%;
+}
+.description {
+  width: 50%;
+}
