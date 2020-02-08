@@ -187,10 +187,50 @@ p {
   margin-top: 10%;
   font-size: 18px
 }
-.about-Skills{
+.about-skills{
   margin: auto;
-  margin-top: 10%;
-  width:90%;
+  margin-top: 5%;
+  width:100%;
   padding: 10px;
   border: solid; color: red;
+}
+.about-calendar{
+  margin: auto;
+  margin-top: 5%;
+  width:100%;
+  padding: 10px;
+  color: rgb(35, 63, 42);
+  border: solid; color:green($color: #000000);
+}
+//skils logos
+.techGridLogos {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 12px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.techLogo:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
+}
+.techLogo{
+  max-width: 20%;
+  max-height: 160px;
+  opacity: 0.5;
+  filter: grayscale(70%);
+}
+
+.logo-width {
+  width: 10%;
 }
