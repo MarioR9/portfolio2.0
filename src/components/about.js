@@ -1,12 +1,13 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
 
 export default class About extends React.Component{
     render(){
         return(
             <div>
+                {/* container for about header, description and img. 2 colums */}
             <Container>
-                <div className='about-Header '>
+                <div className='about-Header'>
                 <Row>
                 <Col>
                 <div>
@@ -20,6 +21,12 @@ export default class About extends React.Component{
                 </Row>
                 </div>
             </Container>
+            <div className='about-Skills'>
+                <ProgressBar animated now={45} />
+                <ProgressBar animated now={45} />
+                
+            </div>
+                
             </div>
         )
     }
