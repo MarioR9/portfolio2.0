@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Image} from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 export default class NavigationBar extends React.Component{
@@ -29,26 +29,21 @@ export default class NavigationBar extends React.Component{
     render(){
         return(
             <div>
-                <Navbar  bg="dark" expand="lg" variant="dark" fixed="top">
-                <Navbar.Brand href="/home">
+                <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
+                <Navbar.Brand  href="/home">
                 &nbsp;
                 <img
                     alt=""
-                    src="./assets/logo.png"
-                    width="45"
-                    height="45"
+                    src="./assets/Mlogo.png"
+                    width="70"
+                    height="70"
                     className="d-inline-block align-top"
                 />{' '}
-                &nbsp;
-                &nbsp;
-                <SocialIcon network="github" onMouseEnter={this.handleIconColorGithub} onMouseLeave={this.handleIconColorGithub} bgColor={this.state.iconGithub} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
-                &nbsp;
-                <SocialIcon network="linkedin" onMouseEnter={this.handleIconColorLinkedin} onMouseLeave={this.handleIconColorLinkedin} bgColor={this.state.iconLinkedin} style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/"/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto" ></Nav>
-                    <Nav className="navbar-left">
+                    <Nav >
                         <Nav.Link href="/home">Home</Nav.Link>
                         &nbsp;
                         <Nav.Link href="/about">About</Nav.Link>
@@ -58,6 +53,11 @@ export default class NavigationBar extends React.Component{
                         <Nav.Link href="./assets/MR_Resume.pdf" download="Mario_Rodriguez_Resume">Resume</Nav.Link>
                         &nbsp;
                         <Nav.Link className='contactBorder' href="/contact">Contact</Nav.Link>
+                        &nbsp;
+                &nbsp;
+                <SocialIcon network="github" onMouseEnter={this.handleIconColorGithub} onMouseLeave={this.handleIconColorGithub} bgColor={this.state.iconGithub} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
+                &nbsp;
+                <SocialIcon network="linkedin" onMouseEnter={this.handleIconColorLinkedin} onMouseLeave={this.handleIconColorLinkedin} bgColor={this.state.iconLinkedin} style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/"/>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>
