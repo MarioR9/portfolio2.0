@@ -196,13 +196,12 @@ p {
 }
 .about-calendar{
   margin: auto;
-  margin-top: 5%;
+  margin-top: 1%;
   width:100%;
   padding: 10px;
   color: rgb(35, 63, 42);
-  border: solid; color:green($color: #000000);
 }
-//skils logos
+//skills logos
 .techGridLogos {
   display: flex;
   position: relative;
@@ -228,7 +227,7 @@ p {
   max-width: 20%;
   max-height: 160px;
   opacity: 0.5;
-  filter: grayscale(70%);
+  filter: grayscale(100%);
 }
 
 .logo-width {

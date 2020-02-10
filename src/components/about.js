@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import GitHubCalendar from 'react-github-calendar';
 
 export default class About extends React.Component{
@@ -22,21 +22,12 @@ export default class About extends React.Component{
                 </Row>
                 </div>
             </Container>
-            <div className='about-skills'>
-                <Row>
-                    <Col>
-                    <img class="techLogo" src="../assets/js.png"/>
-                    <img class="techLogo" src="../assets/react.png"/>
-                    <img class="techLogo" src="../assets/ruby.png"/>
-                    <img class="techLogo" src="../assets/watson.png"/> 
-                    <img class="techLogo" src="../assets/spotify.png"/>
-                    <img class="techLogo" src="../assets/cloudinary.png"/> 
-                    </Col>
-                </Row>
-            </div>
+            {/* Github Container */}
+            <Container>
             <div className='about-calendar'>
-                <GitHubCalendar username="MarioR9" />
+                <GitHubCalendar username="MarioR9" blockSize={20}/>
             </div>
+            </Container>
             </div>
         )
     }
