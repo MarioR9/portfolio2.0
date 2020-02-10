@@ -6,7 +6,7 @@ import {
   Route,Redirect
 } from "react-router-dom";
 import About from './components/about';
-import Projects from './components/projects';
+import Portfolio from './components/portfolio';
 import Contact from './components/contact';
 import Home from './components/home';
 import NavigationBar from './components/navigationBar';
@@ -25,7 +25,7 @@ class App extends React.Component {
             <Route exact path='/'><Redirect to="/home" /></Route>
             <Route path='/home' component={Home}/>
             <Route path="/about" component={About}/>
-            <Route path="/projects" component={Projects}/>
+            <Route path="/portfolio" component={Portfolio}/>
             <Route path="/contact" component={Contact}/>
             <Route component={NotFound} />
           </Switch>
@@ -35,5 +35,5 @@ class App extends React.Component {
     );
   }
 }
-const NotFound = () => <div>Error 404! Page notFound</div>
+const NotFound = () => <div className='error'>Error 404! Page notFound</div>
 export default App;

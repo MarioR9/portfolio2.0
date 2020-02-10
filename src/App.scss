@@ -69,10 +69,6 @@
   height: 100%;
 }
 
-.contactBorder {
-  border: solid; color: white;
-}
-
 ////////////////////////////////////////////////////////animation////////////////////////////////////////////////////////////////////////
 body, html {
   width: 100%;
@@ -156,8 +152,13 @@ body, html {
   66.6% {z-index: 1}
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
+.nav-bar-bottom {
+  margin-left: 50%;
+}
+.error {
+  margin-top: 10%;
+  margin-left: 50%;
+}
 //about divs
 .about-Header {
   margin: auto;
@@ -175,9 +176,9 @@ body, html {
 }
 h1 {
   margin-bottom: 0.1em;
-    line-height: 1.2em;
-    font-family: "neosans regular",Sans-serif;
-    letter-spacing: -0.07em;
+  line-height: 1.2em;
+  font-family: "neosans regular",Sans-serif;
+  letter-spacing: -0.07em;
   font-size: 70px
 }
 p {
@@ -186,11 +187,11 @@ p {
   font-size: 18px
 }
 .about-skills{
-  margin: auto;
   margin-top: 5%;
-  width:100%;
-  padding: 10px;
-  border: solid; color: red;
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: 100;
+  margin-bottom: 5%;
 }
 .about-calendar{
   margin: auto;
@@ -200,34 +201,16 @@ p {
   color: rgb(35, 63, 42);
 }
 //skills logos
-.techGridLogos {
-  display: flex;
-  position: relative;
-  z-index: 1;
-  display: -ms-grid;
-  display: grid;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 1px;
-  grid-row-gap: 12px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-}
 
 .techLogo:hover {
   opacity: 1.0;
   filter: grayscale(0%);
 }
 .techLogo{
-  max-width: 20%;
-  max-height: 160px;
-  opacity: 0.5;
+  max-width: 100%;
+  height: 40px;
   filter: grayscale(100%);
 }
 
-.logo-width {
-  width: 10%;
-}
+//portfolio
+

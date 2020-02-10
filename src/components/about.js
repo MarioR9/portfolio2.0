@@ -28,6 +28,7 @@ export default class About extends React.Component{
                 <GitHubCalendar username="MarioR9" blockSize={20}/>
             </div>
             </Container>
+         
             </div>
         )
     }
