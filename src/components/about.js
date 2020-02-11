@@ -28,7 +28,50 @@ export default class About extends React.Component{
                 <GitHubCalendar username="MarioR9" blockSize={20}/>
             </div>
             </Container>
-         
+              {/* Skills logos */}
+              <div className='about-skills'>
+                <Row >
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/htmlname.png"/>
+                    </Col>
+                    &nbsp;
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/cssname.png"/>
+                    </Col>
+                    
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/jsname.png"/>
+                    </Col>
+                    
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/rubyname.png"/>
+                     </Col>
+                     
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/reactname.png"/>
+                     </Col>
+                     
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/semanticname.png"/>
+                     </Col>
+                     
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/cdname.png"/>
+                     </Col>
+                     
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/watname.png"/>
+                     </Col>
+                     
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/spotiname.png"/>
+                     </Col>
+                     
+                    <Col lg>
+                    <img class="techLogo" src="../assets/logonames/bootsname.png"/>
+                    </Col>
+                </Row>
+            </div>
             </div>
         )
     }

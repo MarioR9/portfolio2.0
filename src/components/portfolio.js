@@ -7,16 +7,49 @@ export default class Portfolio extends React.Component{
 
     render(){
         return(
-            <div>
             <div className='card-group'>
                 <CardDeck>
+                <Card >
+                    <Card.Body>
+                    <Card.Img variant="top" src="../assets/portfolio/portfolioabout.png" />
+                    &nbsp;
+                    <Card.Title>Portfolio website</Card.Title>
+                    <Card.Text>
+                     <SocialIcon network="github"  style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/portfolio2.0"/>
+                    </Card.Text>
+                    <Card.Text>
+                        The portfolio website. created using React.js, javascript, HTML, CSS, and bootstrap.
+                    </Card.Text>
+                    </Card.Body>
+                    <Card.Text>
+                    <Container>
+                    <Row >
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/bootslogo.png"/>
+                        </Col>
+                    </Row>
+                    </Container>
+                    </Card.Text>
+                </Card>
                 <Card>
                     <Card.Body>
                     <Card.Img variant="top" src="../assets/portfolio/Startapp.png" />
                     &nbsp;
                     <Card.Title>Uber Eats HotZone</Card.Title>
                     <Card.Text>
-                     <SocialIcon network="github" url="https://github.com/MarioR9/UberEats_HotZones"/>
+                     <SocialIcon network="github" style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/UberEats_HotZones"/>
                      &nbsp;
                     </Card.Text>
                     <Card.Text>
@@ -163,51 +196,6 @@ export default class Portfolio extends React.Component{
                     </Card.Text>
                 </Card>
                 </CardDeck>
-            </div>
-             {/* Skills logos */}
-            <div className='about-skills'>
-                <Row >
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/htmlname.png"/>
-                    </Col>
-                    &nbsp;
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/cssname.png"/>
-                    </Col>
-                    
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/jsname.png"/>
-                    </Col>
-                    
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/rubyname.png"/>
-                     </Col>
-                     
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/reactname.png"/>
-                     </Col>
-                     
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/semanticname.png"/>
-                     </Col>
-                     
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/cdname.png"/>
-                     </Col>
-                     
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/watname.png"/>
-                     </Col>
-                     
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/spotiname.png"/>
-                     </Col>
-                     
-                    <Col lg>
-                    <img class="techLogo" src="../assets/logonames/bootsname.png"/>
-                    </Col>
-                </Row>
-            </div>
             </div>
         )
     }
