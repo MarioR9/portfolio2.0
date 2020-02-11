@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Popover, OverlayTrigger} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 export default class NavigationBar extends React.Component{
@@ -7,7 +7,8 @@ export default class NavigationBar extends React.Component{
         super(props);
         this.state = {
           iconGithub: "white",
-          iconLinkedin: "white"
+          iconLinkedin: "white",
+          iconEmail: 'white'
         };
       }
     // Color change onmouseenter
@@ -25,8 +26,23 @@ export default class NavigationBar extends React.Component{
             this.setState({ iconLinkedin: "white" })
         }
     }  
-
+    handleIconColorEmail=()=>{
+        if(this.state.iconEmail === "white"){
+            this.setState({ iconEmail: "#b0aeb1" })
+        }else{
+            this.setState({ iconEmail: "white" })
+        }
+    }
     render(){
+
+        const popover =(
+            <Popover id="popover-basic">
+            <Popover.Content>
+            Click to copy my email
+            </Popover.Content>
+            </Popover>
+        )
+          
         return(
             <div>
                 <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
@@ -53,7 +69,15 @@ export default class NavigationBar extends React.Component{
                         <Nav.Link href="./assets/MR_Resume.pdf" download="Mario_Rodriguez_Resume">Resume</Nav.Link>
                         &nbsp;
                         &nbsp;
-                <SocialIcon network="email" bgColor='white' style={{ height: 40, width: 40 }}/>
+
+                        <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 0, hide: 400 }}
+                        overlay={popover}
+                        >
+                        <SocialIcon network="email" onMouseEnter={this.handleIconColorEmail} onMouseLeave={this.handleIconColorEmail} bgColor={this.state.iconEmail} style={{ height: 40, width: 40 }}/>
+                        </OverlayTrigger>
+                
                 &nbsp;
                 <SocialIcon network="github" onMouseEnter={this.handleIconColorGithub} onMouseLeave={this.handleIconColorGithub} bgColor={this.state.iconGithub} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
                 &nbsp;
