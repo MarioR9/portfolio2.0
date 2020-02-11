@@ -7,7 +7,7 @@ export default class Home extends React.Component{
         super(props);
         this.state = {
             intro: true,
-            bkColor: '#333a40'
+            bkColor: 'white' //#333a40
         };
       }
     componentDidMount=()=>{
@@ -31,7 +31,7 @@ export default class Home extends React.Component{
     }
         return(
             <div style={divStyle}>
-                    {this.state.intro === true ? 
+                    {/* {this.state.intro === true ? 
                     <Fragment>
                      <div class="containerAnimation">
                      <div class="dot dot-1"></div>
@@ -48,8 +48,73 @@ export default class Home extends React.Component{
                      </defs>
                      </svg>
                      </Fragment>
-                     :
-                 <div className='about-skills'>
+                     : */}
+                 <div>
+                <Container>    
+                 <div className='home-page'>
+                     <div>
+                        <Container>
+                            <Row>
+                                <Col>
+                                <h1>desinger</h1>
+                                </Col>
+                                <Col>
+                                <img className='img2' src="../assets/0.jpg" />
+                                </Col>
+                                <Col>
+                                <h1>coder</h1>
+                                </Col>
+                            </Row>
+                        </Container>
+                     </div>
+                     <div className='card-group-home'>
+                        <Container>
+                            <Row>
+                                <Col>
+                                <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src="holder.js/100px180" />
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                    </Card.Text>
+                                   
+                                </Card.Body>
+                                </Card>
+                                </Col>
+                                <Col>
+                                <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src="holder.js/100px180" />
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                    </Card.Text>
+                                   
+                                </Card.Body>
+                                </Card>
+                                </Col>
+                                <Col>
+                                <Card style={{ width: '18rem' }}>
+                                <Card.Img variant="top" src="holder.js/100px180" />
+                                <Card.Body>
+                                    <Card.Title>Card Title</Card.Title>
+                                    <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                    </Card.Text>
+                                   
+                                </Card.Body>
+                                </Card>
+                                </Col>
+                            </Row>
+                        </Container>
+                     </div>
+                </div> 
+                </Container>
+                <div className='about-skills'>
                  <Row >
                      <Col lg>
                      <img class="techLogo" src="../assets/logonames/htmlname.png"/>
@@ -91,8 +156,9 @@ export default class Home extends React.Component{
                      <img class="techLogo" src="../assets/logonames/bootsname.png"/>
                      </Col>
                     </Row>
-                </div> }
-
+                </div> 
+                </div>
+                {/* } */}
             </div>
         )
     }
