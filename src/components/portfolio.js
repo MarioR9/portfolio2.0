@@ -3,7 +3,51 @@ import {Container, Card, Row, Col} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 export default class Portfolio extends React.Component{
-   
+    constructor(props) {
+        super(props);
+        this.state = {
+          img1: "../assets/portfolio/portfolioabout.png",
+          img2: "../assets/portfolio/Startapp.png",
+          img3: "../assets/portfolio/tranlatemebk.png",
+          img4: "../assets/portfolio/rickandmortybk.png",
+          img5: "../assets/portfolio/tonesterbk.png",
+        };
+      }
+    handleImage1=()=>{
+        if(this.state.img1 === "../assets/portfolio/portfolioabout.png"){
+            this.setState({img1:'../assets/portfolio/portfolio2.png' })
+        } else {
+            this.setState({img1:"../assets/portfolio/portfolioabout.png" })
+        }
+    }
+    handleImage2=()=>{
+        if(this.state.img2 === "../assets/portfolio/Startapp.png"){
+            this.setState({img2:"../assets/portfolio/Startapp.png" })
+        } else {
+            this.setState({img2:"../assets/portfolio/Startapp.png" })
+        }
+    }
+    handleImage3=()=>{
+        if(this.state.img3 === "../assets/portfolio/tranlatemebk.png"){
+            this.setState({img3:'../assets/portfolio/translateme2.png' })
+        } else {
+            this.setState({img3:"../assets/portfolio/tranlatemebk.png" })
+        }
+    }
+    handleImage4=()=>{
+        if(this.state.img4 === '../assets/portfolio/rickandmortybk.png'){
+            this.setState({img4:'../assets/portfolio/rickcatch.png' })
+        } else {
+            this.setState({img4:'../assets/portfolio/rickandmortybk.png' })
+        }
+    }
+    handleImage5=()=>{
+        if(this.state.img5 === "../assets/portfolio/tonesterbk.png"){
+            this.setState({img5:'../assets/portfolio/tonester2.png' })
+        } else {
+            this.setState({img5:"../assets/portfolio/tonesterbk.png" })
+        }
+    }
 
     render(){
         return(
@@ -11,9 +55,9 @@ export default class Portfolio extends React.Component{
                 {/* projects grid 3 colums*/}
                 <Row>
                 <Col>
-                <Card >
+                <Card style={{ width: '20rem' }} >
                     <Card.Body>
-                    <Card.Img variant="top" src="../assets/portfolio/portfolioabout.png" />
+                    <Card.Img variant="top" src={this.state.img1} onMouseEnter={this.handleImage1} onMouseLeave={this.handleImage1}/>
                     &nbsp;
                     <Card.Title>Portfolio website</Card.Title>
                     <Card.Text>
@@ -47,9 +91,9 @@ export default class Portfolio extends React.Component{
                 </Card>
                 </Col>
                 <Col>
-                <Card>
+                <Card style={{ width: '20rem' }}>
                     <Card.Body>
-                    <Card.Img variant="top" src="../assets/portfolio/Startapp.png" />
+                    <Card.Img variant="top" src={this.state.img2} onMouseEnter={this.handleImage2} onMouseLeave={this.handleImage2} />
                     &nbsp;
                     <Card.Title>Uber Eats HotZone</Card.Title>
                     <Card.Text>
@@ -57,7 +101,7 @@ export default class Portfolio extends React.Component{
                      &nbsp;
                     </Card.Text>
                     <Card.Text>
-                        Using Puppeteer.js to scrape data from google maps and Express.js to collect and fetch data. The application displays information to a user of specific US locations.
+                    Using Puppeteer.js to scrape data from google maps and Express.js to collect and fetch data. The application displays information to a user about how busy the restaurants are around a specific US location.
                     </Card.Text>
                     </Card.Body>
                     <Card.Text>
@@ -84,9 +128,9 @@ export default class Portfolio extends React.Component{
                 </Card>
                 </Col>
                 <Col>
-                <Card>
+                <Card style={{ width: '20rem' }}>
                     <Card.Body>
-                    <Card.Img variant="top" src="../assets/portfolio/tranlatemebk.png" />
+                    <Card.Img variant="top" src={this.state.img3} onMouseEnter={this.handleImage3} onMouseLeave={this.handleImage3} />
                     &nbsp;
                     <Card.Title>Translate Me</Card.Title>
                     <Card.Text>
@@ -133,9 +177,9 @@ export default class Portfolio extends React.Component{
                 </Row>
                 <Row> 
                     <Col>
-                <Card>
+                <Card style={{ width: '20rem' }}>
                     <Card.Body>
-                    <Card.Img variant="top" src="../assets/portfolio/rickandmortybk.png" />
+                    <Card.Img variant="top" src={this.state.img4} onMouseEnter={this.handleImage4} onMouseLeave={this.handleImage4}/>
                     &nbsp;
                     <Card.Title>Rick and Morty Adventures</Card.Title>
                     <Card.Text>
@@ -174,9 +218,9 @@ export default class Portfolio extends React.Component{
                 </Card>
                 </Col>
                 <Col>
-                <Card>
+                <Card style={{ width: '20rem' }}>
                     <Card.Body>
-                    <Card.Img variant="top" src="../assets/portfolio/tonesterbk.png" />
+                    <Card.Img variant="top" src={this.state.img5} onMouseEnter={this.handleImage5} onMouseLeave={this.handleImage5} />
                     &nbsp;
                     <Card.Title>Tonester</Card.Title>
                     <Card.Text>
