@@ -8,7 +8,8 @@ export default class Portfolio extends React.Component{
     render(){
         return(
             <div className='card-group'>
-                <CardDeck>
+                <Row>
+                <Col>
                 <Card >
                     <Card.Body>
                     <Card.Img variant="top" src="../assets/portfolio/portfolioabout.png" />
@@ -43,6 +44,8 @@ export default class Portfolio extends React.Component{
                     </Container>
                     </Card.Text>
                 </Card>
+                </Col>
+                <Col>
                 <Card>
                     <Card.Body>
                     <Card.Img variant="top" src="../assets/portfolio/Startapp.png" />
@@ -78,6 +81,8 @@ export default class Portfolio extends React.Component{
                     </Container>
                     </Card.Text>
                 </Card>
+                </Col>
+                <Col>
                 <Card>
                     <Card.Body>
                     <Card.Img variant="top" src="../assets/portfolio/tranlatemebk.png" />
@@ -123,6 +128,10 @@ export default class Portfolio extends React.Component{
                     </Container>
                     </Card.Text>
                 </Card>
+                </Col>
+                </Row>
+                <Row> 
+                    <Col>
                 <Card>
                     <Card.Body>
                     <Card.Img variant="top" src="../assets/portfolio/rickandmortybk.png" />
@@ -162,6 +171,8 @@ export default class Portfolio extends React.Component{
                     </Container>
                     </Card.Text>
                 </Card>
+                </Col>
+                <Col>
                 <Card>
                     <Card.Body>
                     <Card.Img variant="top" src="../assets/portfolio/tonesterbk.png" />
@@ -195,7 +206,8 @@ export default class Portfolio extends React.Component{
                     </Container>
                     </Card.Text>
                 </Card>
-                </CardDeck>
+                </Col>
+                </Row>
             </div>
         )
     }
