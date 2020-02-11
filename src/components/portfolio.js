@@ -178,14 +178,14 @@ export default class Portfolio extends React.Component{
                     <Card.Body>
                     <Card.Img variant="top" src="../assets/portfolio/tonesterbk.png" />
                     &nbsp;
-                    <Card.Title>Tonestes</Card.Title>
+                    <Card.Title>Tonester</Card.Title>
                     <Card.Text>
                      <SocialIcon network="github"  style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/tonester_frontend"/>
                      &nbsp;
                      <SocialIcon network="youtube"  style={{ height: 40, width: 40 }} url="https://www.youtube.com/watch?v=bQAIDucJ6Dk&feature=emb_logo"/>
                     </Card.Text>
                     <Card.Text>
-                        Tonesters was build using vanilla javascript for the frontend and rails for the backend. Tonester allows users to save albums using Spotify’s API.
+                        Tonester was build using vanilla javascript for the frontend and rails for the backend. Tonester allows users to save albums using Spotify’s API.
                     </Card.Text>
                     </Card.Body>
                     <Card.Text>
