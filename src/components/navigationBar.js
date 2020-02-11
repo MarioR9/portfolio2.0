@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Popover, OverlayTrigger} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
+import copy from 'copy-to-clipboard';
 
 export default class NavigationBar extends React.Component{
     constructor(props) {
@@ -8,7 +9,10 @@ export default class NavigationBar extends React.Component{
         this.state = {
           iconGithub: "white",
           iconLinkedin: "white",
-          iconEmail: 'white'
+          iconEmail: 'white',
+          msg:'Click to copy my email',
+          email: 'mariorodriguezan@gmail.com',
+          popoverColor: ''
         };
       }
     // Color change onmouseenter
@@ -29,16 +33,27 @@ export default class NavigationBar extends React.Component{
     handleIconColorEmail=()=>{
         if(this.state.iconEmail === "white"){
             this.setState({ iconEmail: "#b0aeb1" })
+            this.setState({
+                popoverColor: '',
+                msg: 'Click to copy my email 📧'
+            })
         }else{
             this.setState({ iconEmail: "white" })
         }
     }
+    handleCopy=()=>{
+        copy(this.state.email);
+        this.setState({
+            popoverColor: 'popover-bk-color',
+            msg: "Yay! Let's make something awesome together. 🙌"
+        })
+      }
     render(){
 
         const popover =(
             <Popover id="popover-basic">
-            <Popover.Content>
-            Click to copy my email
+            <Popover.Content className={this.state.popoverColor}>
+            {this.state.msg}
             </Popover.Content>
             </Popover>
         )
@@ -48,6 +63,7 @@ export default class NavigationBar extends React.Component{
                 <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
                 <Navbar.Brand  href="/home">
                 &nbsp;
+                {/* Ican can be resize by changin width and height */}
                 <img
                     alt=""
                     src="./assets/Mlogo.png"
@@ -69,20 +85,23 @@ export default class NavigationBar extends React.Component{
                         <Nav.Link href="./assets/MR_Resume.pdf" download="Mario_Rodriguez_Resume">Resume</Nav.Link>
                         &nbsp;
                         &nbsp;
-
+                        {/* overlay for tooltip. show is the time that takes to show when hover over.  */}
                         <OverlayTrigger
-                        placement="bottom"
-                        delay={{ show: 0, hide: 400 }}
+                        placement="bottom-end"
+                        delay={{ show: 0, hide: 0 }}
                         overlay={popover}
                         >
-                        <SocialIcon network="email" onMouseEnter={this.handleIconColorEmail} onMouseLeave={this.handleIconColorEmail} bgColor={this.state.iconEmail} style={{ height: 40, width: 40 }}/>
+                        <SocialIcon onClick={this.handleCopy} network="email" onMouseEnter={this.handleIconColorEmail} onMouseLeave={this.handleIconColorEmail} bgColor={this.state.iconEmail} style={{ height: 40, width: 40 }}/>
                         </OverlayTrigger>
                 
                 &nbsp;
                 <SocialIcon network="github" onMouseEnter={this.handleIconColorGithub} onMouseLeave={this.handleIconColorGithub} bgColor={this.state.iconGithub} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
                 &nbsp;
                 <SocialIcon network="linkedin" onMouseEnter={this.handleIconColorLinkedin} onMouseLeave={this.handleIconColorLinkedin} bgColor={this.state.iconLinkedin} style={{ height: 40, width: 40 }} url="https://www.linkedin.com/in/mario-rodriguezan/"/>
-                    </Nav>
+                &nbsp; 
+                &nbsp;
+                &nbsp;
+                </Nav>
                 </Navbar.Collapse>
                 </Navbar>
             </div>
