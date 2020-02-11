@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import About from './components/about';
 import Portfolio from './components/portfolio';
-import Contact from './components/contact';
 import Home from './components/home';
 import NavigationBar from './components/navigationBar';
 
@@ -26,7 +25,6 @@ class App extends React.Component {
             <Route path='/home' component={Home}/>
             <Route path="/about" component={About}/>
             <Route path="/portfolio" component={Portfolio}/>
-            <Route path="/contact" component={Contact}/>
             <Route component={NotFound} />
           </Switch>
           </div>

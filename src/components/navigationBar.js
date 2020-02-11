@@ -52,8 +52,8 @@ export default class NavigationBar extends React.Component{
                         &nbsp;
                         <Nav.Link href="./assets/MR_Resume.pdf" download="Mario_Rodriguez_Resume">Resume</Nav.Link>
                         &nbsp;
-                        <Nav.Link className='contactBorder' href="/contact">Contact</Nav.Link>
                         &nbsp;
+                <SocialIcon network="email" bgColor='white' style={{ height: 40, width: 40 }}/>
                 &nbsp;
                 <SocialIcon network="github" onMouseEnter={this.handleIconColorGithub} onMouseLeave={this.handleIconColorGithub} bgColor={this.state.iconGithub} style={{ height: 40, width: 40 }} url="https://github.com/MarioR9"/> 
                 &nbsp;
