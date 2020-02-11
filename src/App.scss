@@ -234,3 +234,10 @@ p {
   margin-top: 10%;
   font-size: 18px
 }
+.card-group:hover .card {
+  opacity: 0.4;
+}
+
+.card-group .card:hover {
+  opacity:1;
+}
