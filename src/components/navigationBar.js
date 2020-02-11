@@ -80,7 +80,7 @@ export default class NavigationBar extends React.Component{
                         &nbsp;
                         <Nav.Link href="/about">About</Nav.Link>
                         &nbsp;
-                        <Nav.Link href="/portfolio">portfolio</Nav.Link>
+                        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                         &nbsp;
                         <Nav.Link href="./assets/MR_Resume.pdf" download="Mario_Rodriguez_Resume">Resume</Nav.Link>
                         &nbsp;
