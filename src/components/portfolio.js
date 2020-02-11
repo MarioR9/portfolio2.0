@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Card, Row, Col, CardDeck} from 'react-bootstrap';
+import {Container, Card, Row, Col} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 export default class Portfolio extends React.Component{
@@ -8,6 +8,7 @@ export default class Portfolio extends React.Component{
     render(){
         return(
             <div className='card-group'>
+                {/* projects grid 3 colums*/}
                 <Row>
                 <Col>
                 <Card >
