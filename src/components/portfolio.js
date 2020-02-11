@@ -18,32 +18,32 @@ export default class Portfolio extends React.Component{
                     <Card.Text>
                      <SocialIcon network="github" url="https://github.com/MarioR9/UberEats_HotZones"/>
                      &nbsp;
-                     
                     </Card.Text>
                     <Card.Text>
                         Using Puppeteer.js to scrape data from google maps and Express.js to collect and fetch data. The application displays information to a user of specific US locations.
                     </Card.Text>
                     </Card.Body>
-                <Container >
-                <Row noGutter >
-                    <Col>
-                    <img class="techLogo" src="../assets/logos/jslogo.png"/>
-                    </Col>
-                    &nbsp;
-                    <Col>
-                    <img class="techLogo" src="../assets/logos/csslogo.png"/>
-                    </Col>
-                    
-                    <Col>
-                    <img class="techLogo" src="../assets/logos/rubylogo.png"/>
-                    </Col>
-                    
-                    <Col>
-                    <img class="techLogo" src="../assets/logos/watlogo.png"/>
-                     </Col>
-                     
-                </Row>
-                </Container>
+                    <Card.Text>
+                    <Container>
+                    <Row >
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/nodelogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/puppeteerlogo.png"/>
+                        </Col>
+                    </Row>
+                    </Container>
+                    </Card.Text>
                 </Card>
                 <Card>
                     <Card.Body>
@@ -59,6 +59,36 @@ export default class Portfolio extends React.Component{
                         Translate me uses a machine learning technology to classify and translate images into different languages. Once the image is captured, users can flip the image to reveal the desired translated word for the image.
                     </Card.Text>
                     </Card.Body>
+                    <Card.Text>
+                    <Container>
+                    <Row >
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/watlogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/cdlogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/slogo.png"/>
+                        </Col>
+                    </Row>
+                    </Container>
+                    </Card.Text>
                 </Card>
                 <Card>
                     <Card.Body>
@@ -74,6 +104,30 @@ export default class Portfolio extends React.Component{
                         Rick and Morty Adventures is an rpg game that allows you to play as Rick and capture different Morties. In addition, users have to look after each Morty they capture and help them level up by keeping them healthy and fed.
                     </Card.Text>
                     </Card.Body>
+                    <Card.Text>
+                    <Container>
+                    <Row >
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/slogo.png"/>
+                        </Col>
+                    </Row>
+                    </Container>
+                    </Card.Text>
                 </Card>
                 <Card>
                     <Card.Body>
@@ -89,6 +143,24 @@ export default class Portfolio extends React.Component{
                         Tonesters was build using vanilla javascript for the frontend and rails for the backend. Tonester allows users to save albums using Spotify’s API.
                     </Card.Text>
                     </Card.Body>
+                    <Card.Text>
+                    <Container>
+                    <Row >
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        </Col>
+                        <Col xl={4}>
+                        <img class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
+                        </Col>
+                    </Row>
+                    </Container>
+                    </Card.Text>
                 </Card>
                 </CardDeck>
             </div>

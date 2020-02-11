@@ -217,5 +217,16 @@ p {
   margin-top: 7%;
   margin-left: 20%;
   margin-right: 20%;
-
+}
+.portfilio-skills {
+  margin: auto;
+  margin-top: 1%;
+  width:100%;
+  padding: 10px;
+  color: rgb(35, 63, 42);
+  filter: grayscale(100%);
+}
+.portfilio-skills:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
 }
