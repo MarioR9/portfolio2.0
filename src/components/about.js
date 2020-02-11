@@ -28,7 +28,7 @@ export default class About extends React.Component{
                 <GitHubCalendar username="MarioR9" blockSize={20}/>
             </div>
             </Container>
-              {/* Skills logos */}
+              {/* Skills logos
               <div className='about-skills'>
                 <Row >
                     <Col lg>
@@ -71,7 +71,7 @@ export default class About extends React.Component{
                     <img class="techLogo" src="../assets/logonames/bootsname.png"/>
                     </Col>
                 </Row>
-            </div>
+            </div> */}
             </div>
         )
     }
