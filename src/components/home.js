@@ -13,7 +13,7 @@ export default class Home extends React.Component{
     componentDidMount=()=>{
         setTimeout(function(){
             this.setState({intro: false, bkColor: 'white'});
-       }.bind(this),4950);
+       }.bind(this),4000);
     }
 
       
@@ -67,6 +67,9 @@ export default class Home extends React.Component{
                             </Row>
                         </Container>
                      </div>
+                     <div className='home-checkWork'>
+                        <p>Checkout my work</p>
+                     </div>
                      <div className='card-group-home'>
                         <Container>
                             <Row>
@@ -94,6 +97,7 @@ export default class Home extends React.Component{
                      </div>
                 </div> 
                 </Container>
+                <div>
                 <div className='about-skills'>
                  <Row >
                      <Col lg>
@@ -137,6 +141,7 @@ export default class Home extends React.Component{
                      </Col>
                     </Row>
                 </div> 
+                </div>
                 </div>
                     }
             </div>
