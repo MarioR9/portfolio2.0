@@ -80,10 +80,11 @@ export default class Home extends React.Component{
                             </Row>
                         </Container>
                      </div>
+                     <div className='card-group-home'>
                      <div className='home-checkWork'>
                      <Link to="/portfolio" className="btn btn-primary">Checkout my work</Link>
                      </div>
-                     <div className='card-group-home'>
+                     &nbsp;
                         <Container>
                             <Row>
                                 <Col>
