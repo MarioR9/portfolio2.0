@@ -7,13 +7,13 @@ export default class Home extends React.Component{
         super(props);
         this.state = {
             intro: true,
-            bkColor: 'white' //#333a40
+            bkColor: '#333a40' //#333a40
         };
       }
     componentDidMount=()=>{
         setTimeout(function(){
             this.setState({intro: false, bkColor: 'white'});
-       }.bind(this),4975);
+       }.bind(this),4950);
     }
 
       
@@ -31,7 +31,7 @@ export default class Home extends React.Component{
     }
         return(
             <div style={divStyle}>
-                    {/* {this.state.intro === true ? 
+                    {this.state.intro === true ? 
                     <Fragment>
                      <div class="containerAnimation">
                      <div class="dot dot-1"></div>
@@ -48,7 +48,7 @@ export default class Home extends React.Component{
                      </defs>
                      </svg>
                      </Fragment>
-                     : */}
+                     :
                  <div>
                 <Container>    
                  <div className='home-page'>
@@ -71,42 +71,22 @@ export default class Home extends React.Component{
                         <Container>
                             <Row>
                                 <Col>
-                                <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                    </Card.Text>
-                                   
-                                </Card.Body>
+                                <Card style={{ width: '18rem'}}>
+                                <Card.Img src="../assets/portfolio/Startapp.png" />
+                                &nbsp;
+                                <Card.Text>Uber Eats HotZone</Card.Text>
                                 </Card>
                                 </Col>
                                 <Col>
                                 <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                    </Card.Text>
-                                   
-                                </Card.Body>
+                                <Card.Img src='../assets/portfolio/translateme2.png' />
+                                <Card.Text>Translate Me</Card.Text>
                                 </Card>
                                 </Col>
                                 <Col>
                                 <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="holder.js/100px180" />
-                                <Card.Body>
-                                    <Card.Title>Card Title</Card.Title>
-                                    <Card.Text>
-                                    Some quick example text to build on the card title and make up the bulk of
-                                    the card's content.
-                                    </Card.Text>
-                                   
-                                </Card.Body>
+                                <Card.Img src='../assets/portfolio/tonester2.png' />
+                                <Card.Text>Tonester</Card.Text>
                                 </Card>
                                 </Col>
                             </Row>
@@ -158,7 +138,7 @@ export default class Home extends React.Component{
                     </Row>
                 </div> 
                 </div>
-                {/* } */}
+                    }
             </div>
         )
     }

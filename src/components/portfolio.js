@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Card, Row, Col} from 'react-bootstrap';
+import {Container, Card, Row, Col, Collapse} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 
 export default class Portfolio extends React.Component{
@@ -11,6 +11,11 @@ export default class Portfolio extends React.Component{
           img3: "../assets/portfolio/tranlatemebk.png",
           img4: "../assets/portfolio/rickandmortybk.png",
           img5: "../assets/portfolio/tonesterbk.png",
+          open1: false,
+          open2: false,
+          open3: false,
+          open4: false,
+          open5: false,
         };
       }
     handleImage1=()=>{
@@ -55,18 +60,25 @@ export default class Portfolio extends React.Component{
                 {/* projects grid 3 colums*/}
                 <Row>
                 <Col>
-                <Card style={{ width: '20rem' }} >
+                <Card 
+                style={{ width: '20rem' }} 
+                onClick={() => this.setState({open1: !this.state.open1})}  
+                aria-controls="example-collapse-text"
+                aria-expanded={this.state.open1}
+                >
                     <Card.Body>
                     <Card.Img variant="top" src={this.state.img1} onMouseEnter={this.handleImage1} onMouseLeave={this.handleImage1}/>
                     &nbsp;
                     <Card.Title>Portfolio website</Card.Title>
+                    </Card.Body>
+                    <Collapse in={this.state.open1}>
+                    <Card.Body >
                     <Card.Text>
                      <SocialIcon network="github"  style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/portfolio2.0"/>
                     </Card.Text>
                     <Card.Text>
                         The portfolio website. created using React.js, javascript, HTML, CSS, and bootstrap.
                     </Card.Text>
-                    </Card.Body>
                     <Card.Text>
                     <Container>
                     <Row >
@@ -88,14 +100,23 @@ export default class Portfolio extends React.Component{
                     </Row>
                     </Container>
                     </Card.Text>
+                    </Card.Body>
+                    </Collapse>
                 </Card>
                 </Col>
                 <Col>
-                <Card style={{ width: '20rem' }}>
+                <Card style={{ width: '20rem' }}
+                onClick={() => this.setState({open2: !this.state.open2})}  
+                aria-controls="example-collapse-text"
+                aria-expanded={this.state.open2}
+                >
                     <Card.Body>
                     <Card.Img variant="top" src={this.state.img2} onMouseEnter={this.handleImage2} onMouseLeave={this.handleImage2} />
                     &nbsp;
                     <Card.Title>Uber Eats HotZone</Card.Title>
+                    </Card.Body>
+                    <Collapse in={this.state.open2}>
+                    <Card.Body>
                     <Card.Text>
                      <SocialIcon network="github" style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/UberEats_HotZones"/>
                      &nbsp;
@@ -103,7 +124,6 @@ export default class Portfolio extends React.Component{
                     <Card.Text>
                     Using Puppeteer.js to scrape data from google maps and Express.js to collect and fetch data. The application displays information to a user about how busy the restaurants are around a specific US location.
                     </Card.Text>
-                    </Card.Body>
                     <Card.Text>
                     <Container>
                     <Row >
@@ -125,14 +145,22 @@ export default class Portfolio extends React.Component{
                     </Row>
                     </Container>
                     </Card.Text>
+                    </Card.Body>
+                    </Collapse>
                 </Card>
                 </Col>
                 <Col>
-                <Card style={{ width: '20rem' }}>
+                <Card style={{ width: '20rem' }}
+                onClick={() => this.setState({open3: !this.state.open3})}  
+                aria-controls="example-collapse-text"
+                aria-expanded={this.state.open3}>
                     <Card.Body>
                     <Card.Img variant="top" src={this.state.img3} onMouseEnter={this.handleImage3} onMouseLeave={this.handleImage3} />
                     &nbsp;
                     <Card.Title>Translate Me</Card.Title>
+                    </Card.Body>
+                    <Collapse in={this.state.open3}>
+                    <Card.Body>
                     <Card.Text>
                      <SocialIcon network="github"  style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/TranslateMeFrontend"/>
                      &nbsp;
@@ -141,7 +169,6 @@ export default class Portfolio extends React.Component{
                     <Card.Text>
                         Translate me uses a machine learning technology to classify and translate images into different languages. Once the image is captured, users can flip the image to reveal the desired translated word for the image.
                     </Card.Text>
-                    </Card.Body>
                     <Card.Text>
                     <Container>
                     <Row >
@@ -172,16 +199,24 @@ export default class Portfolio extends React.Component{
                     </Row>
                     </Container>
                     </Card.Text>
+                    </Card.Body>
+                    </Collapse>
                 </Card>
                 </Col>
                 </Row>
                 <Row> 
                     <Col>
-                <Card style={{ width: '20rem' }}>
+                <Card style={{ width: '20rem' }}
+                onClick={() => this.setState({open4: !this.state.open4})}  
+                aria-controls="example-collapse-text"
+                aria-expanded={this.state.open4}>
                     <Card.Body>
                     <Card.Img variant="top" src={this.state.img4} onMouseEnter={this.handleImage4} onMouseLeave={this.handleImage4}/>
                     &nbsp;
                     <Card.Title>Rick and Morty Adventures</Card.Title>
+                    </Card.Body>
+                    <Collapse in={this.state.open4}>
+                    <Card.Body>
                     <Card.Text>
                      <SocialIcon network="github"  style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/RickAndMortyFrontend"/>
                      &nbsp;
@@ -190,7 +225,6 @@ export default class Portfolio extends React.Component{
                     <Card.Text>
                         Rick and Morty Adventures is an rpg game that allows you to play as Rick and capture different Morties. In addition, users have to look after each Morty they capture and help them level up by keeping them healthy and fed.
                     </Card.Text>
-                    </Card.Body>
                     <Card.Text>
                     <Container>
                     <Row >
@@ -215,14 +249,22 @@ export default class Portfolio extends React.Component{
                     </Row>
                     </Container>
                     </Card.Text>
+                    </Card.Body>
+                    </Collapse>
                 </Card>
                 </Col>
                 <Col>
-                <Card style={{ width: '20rem' }}>
+                <Card style={{ width: '20rem' }}
+                onClick={() => this.setState({open5: !this.state.open5})}  
+                aria-controls="example-collapse-text"
+                aria-expanded={this.state.open5}>
                     <Card.Body>
                     <Card.Img variant="top" src={this.state.img5} onMouseEnter={this.handleImage5} onMouseLeave={this.handleImage5} />
                     &nbsp;
                     <Card.Title>Tonester</Card.Title>
+                    </Card.Body>
+                    <Collapse in={this.state.open5}>
+                    <Card.Body>
                     <Card.Text>
                      <SocialIcon network="github"  style={{ height: 40, width: 40 }} url="https://github.com/MarioR9/tonester_frontend"/>
                      &nbsp;
@@ -231,7 +273,6 @@ export default class Portfolio extends React.Component{
                     <Card.Text>
                         Tonester was build using vanilla javascript for the frontend and rails for the backend. Tonester allows users to save albums using Spotify’s API.
                     </Card.Text>
-                    </Card.Body>
                     <Card.Text>
                     <Container>
                     <Row >
@@ -250,6 +291,8 @@ export default class Portfolio extends React.Component{
                     </Row>
                     </Container>
                     </Card.Text>
+                    </Card.Body>
+                    </Collapse>
                 </Card>
                 </Col>
                 </Row>

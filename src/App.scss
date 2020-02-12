@@ -138,7 +138,10 @@ body, html {
   margin: auto;
   margin-top: 10%;
   width:90%;
-  padding: 10px;
+}
+.card-group-home {
+  margin: auto;
+  margin-top: 10%;
 }
 .card-group-home:hover .card {
   opacity: 0.4;
@@ -146,6 +149,7 @@ body, html {
 
 .card-group-home .card:hover {
   opacity:1;
+  padding: 5px;
 }
 
 
@@ -254,4 +258,7 @@ p {
 
 .card-group .card:hover {
   opacity:1;
+  padding: 5px;
 }
+
+
