@@ -1,13 +1,20 @@
 import React, { Fragment } from 'react'
-import {Container, Card, Row, Col} from 'react-bootstrap';
-
+import {Container, Card, Row, Col, } from 'react-bootstrap';
+import {
+    BrowserRouter as Router,
+    Link
+  } from "react-router-dom";
 
 export default class Home extends React.Component{
+
     constructor(props) {
         super(props);
         this.state = {
             intro: true,
-            bkColor: '#333a40' //#333a40
+            bkColor: '#333a40', //#333a40
+            img: "../assets/001.png",
+            h: '<coder>',
+            h1: '<designer>'
         };
       }
     componentDidMount=()=>{
@@ -15,14 +22,13 @@ export default class Home extends React.Component{
             this.setState({intro: false, bkColor: 'white'});
        }.bind(this),4000);
     }
-
+    
       
     render(){
 
     const divStyle = {
         backgroundColor: this.state.bkColor,
         position: 'fixed',
-        padding:0,
         margin:0,
         top:0,
         left:0,
@@ -52,23 +58,26 @@ export default class Home extends React.Component{
                  <div>
                 <Container>    
                  <div className='home-page'>
-                     <div>
+                     <div className='home-title'>   
                         <Container>
                             <Row>
                                 <Col>
-                                <h1>desinger</h1>
+                                <img className='img2' src={this.state.img} onMouseEnter={this.handleImageTransition} onMouseLeave={this.handleImageTransition}/>
                                 </Col>
                                 <Col>
-                                <img className='img2' src="../assets/0.jpg" />
-                                </Col>
-                                <Col>
-                                <h1>coder</h1>
+                                <div className='home-header'>
+                                <h1><a href="/about">{this.state.h}</a></h1>
+                                <h1><a href="/about">{this.state.h1}</a></h1>
+                                <p>I am a driven individual with the ability to adapt to any situation.
+                                    Designer and Coder focused on beautiful, functional and clean code
+                                    and proven potential to grow self and others.</p>
+                                </div>
                                 </Col>
                             </Row>
                         </Container>
                      </div>
                      <div className='home-checkWork'>
-                        <p>Checkout my work</p>
+                     <Link to="/portfolio" className="btn btn-primary">Checkout my work</Link>
                      </div>
                      <div className='card-group-home'>
                         <Container>
