@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Card, Row, Col, } from 'react-bootstrap';
+import {Container, Card, Row, Col } from 'react-bootstrap';
 import {
     Link
   } from "react-router-dom";
@@ -15,12 +15,13 @@ export default class Home extends React.Component{
             bkColor: '#333a40', //#333a40
             img: "../assets/001.png",
             h: '<coder>',
-            h1: '<designer>'
+            h1: '<designer>',
+            position: 'fixed'
         };
       }
     componentDidMount=()=>{
         setTimeout(function(){
-            this.setState({intro: false, bkColor: 'white'});
+            this.setState({intro: false, bkColor: 'white', position: ' '});
        }.bind(this),4000);
     }
     
@@ -30,7 +31,7 @@ export default class Home extends React.Component{
     const divStyle = {
         overflow: 'auto',
         backgroundColor: this.state.bkColor,
-        position: 'fixed',
+        position: this.state.position,
         margin:0,
         top:0,
         left:0,
