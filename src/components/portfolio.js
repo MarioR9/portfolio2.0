@@ -84,19 +84,19 @@ export default class Portfolio extends React.Component{
                     <Container>
                     <Row >
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/jslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/csslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/bootslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/bootslogo.png"/>
                         </Col>
                     </Row>
                     </Container>
@@ -129,19 +129,19 @@ export default class Portfolio extends React.Component{
                     <Container>
                     <Row >
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/jslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/nodelogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/nodelogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/puppeteerlogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/puppeteerlogo.png"/>
                         </Col>
                     </Row>
                     </Container>
@@ -174,28 +174,28 @@ export default class Portfolio extends React.Component{
                     <Container>
                     <Row >
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/jslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/csslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/watlogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/watlogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/cdlogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/cdlogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/slogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/slogo.png"/>
                         </Col>
                     </Row>
                     </Container>
@@ -230,22 +230,22 @@ export default class Portfolio extends React.Component{
                     <Container>
                     <Row >
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/reactlogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/jslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/csslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/slogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/slogo.png"/>
                         </Col>
                     </Row>
                     </Container>
@@ -278,16 +278,16 @@ export default class Portfolio extends React.Component{
                     <Container>
                     <Row >
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/jslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/jslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/htmllogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/csslogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/csslogo.png"/>
                         </Col>
                         <Col xl={4}>
-                        <img class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
+                        <img alt="logo" class="portfilio-skills" src="../assets/logos/rubylogo.png"/>
                         </Col>
                     </Row>
                     </Container>
@@ -300,7 +300,7 @@ export default class Portfolio extends React.Component{
                 <div className='nav-bottom '>
                 <Navbar bg="light" variant="light" fixed='bottom'>
                 <Navbar.Text>
-                    © 2019 Mario Rodriguez
+                    © 2020 Mario Rodriguez
                 </Navbar.Text>
                  </Navbar>
                 </div >

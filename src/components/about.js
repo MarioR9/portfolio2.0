@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap';
 import GitHubCalendar from 'react-github-calendar';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 export default class About extends React.Component{
     render(){
@@ -18,7 +18,7 @@ export default class About extends React.Component{
                 </div>
                 </Col>
                 <Col>
-                <img className='img2' src="../assets/0.jpg" />
+                <img className='img2' alt="pic" src="../assets/0.jpg" />
                 </Col>
                 </Row>
                 </div>
@@ -34,50 +34,50 @@ export default class About extends React.Component{
               <div className='about-skills'>
                 <Row >
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/htmlname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/htmlname.png"/>
                     </Col>
                     &nbsp;
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/cssname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/cssname.png"/>
                     </Col>
                     
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/jsname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/jsname.png"/>
                     </Col>
                     
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/rubyname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/rubyname.png"/>
                      </Col>
                      
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/reactname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/reactname.png"/>
                      </Col>
                      
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/semanticname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/semanticname.png"/>
                      </Col>
                      
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/cdname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/cdname.png"/>
                      </Col>
                      
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/watname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/watname.png"/>
                      </Col>
                      
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/spotiname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/spotiname.png"/>
                      </Col>
                      
                     <Col lg>
-                    <img class="techLogo" src="../assets/logonames/bootsname.png"/>
+                    <img alt="logo" class="techLogo" src="../assets/logonames/bootsname.png"/>
                     </Col>
                 </Row>
             </div>
             <div className='nav-bottom '>
                 <Navbar bg="light" variant="light" fixed='bottom'>
                 <Navbar.Text>
-                    © 2019 Mario Rodriguez
+                    © 2020 Mario Rodriguez
                 </Navbar.Text>
                  </Navbar>
                 </div >

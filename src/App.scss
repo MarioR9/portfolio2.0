@@ -156,8 +156,11 @@ body, html {
   padding: 5px;
 }
 .home-checkWork {
-  margin-top: 10%;
-  margin-left: 50%;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -166,10 +169,19 @@ body, html {
   margin-left: 50%;
   
 }
-.error {
-  margin-top: 10%;
-  margin-left: 50%;
+.error-container  {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.error {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
 //about divs
 .about-Header {
   margin: auto;

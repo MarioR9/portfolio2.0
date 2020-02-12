@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import {Container, Card, Row, Col, } from 'react-bootstrap';
 import {
-    BrowserRouter as Router,
     Link
   } from "react-router-dom";
-  import { Navbar, Nav } from 'react-bootstrap';
+  import { Navbar } from 'react-bootstrap';
 
 
 export default class Home extends React.Component{
@@ -66,7 +65,7 @@ export default class Home extends React.Component{
                         <Container>
                             <Row>
                                 <Col>
-                                <img className='img2' src={this.state.img} onMouseEnter={this.handleImageTransition} onMouseLeave={this.handleImageTransition}/>
+                                <img alt="pic" className='img2' src={this.state.img} onMouseEnter={this.handleImageTransition} onMouseLeave={this.handleImageTransition}/>
                                 </Col>
                                 <Col>
                                 <div className='home-header'>
@@ -111,7 +110,7 @@ export default class Home extends React.Component{
                 <div className='nav-bottom '>
                 <Navbar bg="light" variant="light" fixed='bottom'>
                 <Navbar.Text>
-                    © 2019 Mario Rodriguez
+                    © 2020 Mario Rodriguez
                 </Navbar.Text>
                  </Navbar>
                 </div >

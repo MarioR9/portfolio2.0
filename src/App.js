@@ -9,7 +9,7 @@ import About from './components/about';
 import Portfolio from './components/portfolio';
 import Home from './components/home';
 import NavigationBar from './components/navigationBar';
-
+import NotFound from './components/notFound';
 
 class App extends React.Component {
   render(){
@@ -33,5 +33,4 @@ class App extends React.Component {
     );
   }
 }
-const NotFound = () => <div className='error'>Error 404! Page notFound</div>
 export default App;
