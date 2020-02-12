@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap';
 import GitHubCalendar from 'react-github-calendar';
+import { Navbar, Nav } from 'react-bootstrap';
 
 export default class About extends React.Component{
     render(){
@@ -73,6 +74,13 @@ export default class About extends React.Component{
                     </Col>
                 </Row>
             </div>
+            <div className='nav-bottom '>
+                <Navbar bg="light" variant="light" fixed='bottom'>
+                <Navbar.Text>
+                    © 2019 Mario Rodriguez
+                </Navbar.Text>
+                 </Navbar>
+                </div >
             </div>
         )
     }

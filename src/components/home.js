@@ -4,6 +4,8 @@ import {
     BrowserRouter as Router,
     Link
   } from "react-router-dom";
+  import { Navbar, Nav } from 'react-bootstrap';
+
 
 export default class Home extends React.Component{
 
@@ -27,6 +29,7 @@ export default class Home extends React.Component{
     render(){
 
     const divStyle = {
+        overflow: 'auto',
         backgroundColor: this.state.bkColor,
         position: 'fixed',
         margin:0,
@@ -36,9 +39,10 @@ export default class Home extends React.Component{
         height: '100%'
     }
         return(
+            <div>
             <div style={divStyle}>
                     {this.state.intro === true ? 
-                    <Fragment>
+                    <div>
                      <div class="containerAnimation">
                      <div class="dot dot-1"></div>
                      <div class="dot dot-2"></div>
@@ -53,7 +57,7 @@ export default class Home extends React.Component{
                          </filter>
                      </defs>
                      </svg>
-                     </Fragment>
+                     </div>
                      :
                  <div>
                 <Container>    
@@ -104,55 +108,18 @@ export default class Home extends React.Component{
                             </Row>
                         </Container>
                      </div>
+                <div className='nav-bottom '>
+                <Navbar bg="light" variant="light" fixed='bottom'>
+                <Navbar.Text>
+                    © 2019 Mario Rodriguez
+                </Navbar.Text>
+                 </Navbar>
+                </div >
                 </div> 
                 </Container>
-                <div>
-                <div className='about-skills'>
-                 <Row >
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/htmlname.png"/>
-                     </Col>
-                     &nbsp;
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/cssname.png"/>
-                     </Col>
-                     
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/jsname.png"/>
-                     </Col>
-                     
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/rubyname.png"/>
-                      </Col>
-                      
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/reactname.png"/>
-                      </Col>
-                      
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/semanticname.png"/>
-                      </Col>
-                      
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/cdname.png"/>
-                      </Col>
-                      
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/watname.png"/>
-                      </Col>
-                      
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/spotiname.png"/>
-                      </Col>
-                      
-                     <Col lg>
-                     <img class="techLogo" src="../assets/logonames/bootsname.png"/>
-                     </Col>
-                    </Row>
-                </div> 
-                </div>
                 </div>
                     }
+            </div>
             </div>
         )
     }

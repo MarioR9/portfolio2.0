@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, Card, Row, Col, Collapse} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
+import { Navbar} from 'react-bootstrap';
 
 export default class Portfolio extends React.Component{
     constructor(props) {
@@ -296,6 +297,13 @@ export default class Portfolio extends React.Component{
                 </Card>
                 </Col>
                 </Row>
+                <div className='nav-bottom '>
+                <Navbar bg="light" variant="light" fixed='bottom'>
+                <Navbar.Text>
+                    © 2019 Mario Rodriguez
+                </Navbar.Text>
+                 </Navbar>
+                </div >
             </div>
         )
     }
