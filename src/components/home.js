@@ -82,7 +82,7 @@ export default class Home extends React.Component{
                      </div>
                      <div className='card-group-home'>
                      <div className='home-checkWork'>
-                     <Link to="/portfolio" className="btn btn-primary">Checkout my work</Link>
+                     <Link to="/portfolio" className="btn btn-primary">Check out my work</Link>
                      </div>
                      &nbsp;
                         <Container>
