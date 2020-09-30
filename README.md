@@ -29,15 +29,9 @@ Project is created with:
 
 ## Images
 
-##### Login 
-<img src="ReadmeImages/main.png" width="300"> 
+##### Main 
+<img src="ReadmeImages/portfoliov2.png" width="300"> 
 
-##### User 
-<img src="ReadmeImages/categories.png" width="300"> 
-
-##### Category 
-<img src="ReadmeImages/categoryCards.png" width="300"> 
-
-##### Translate
-<img src="ReadmeImages/selectLanguage.png" width="300"> 
+##### Projects 
+<img src="ReadmeImages/projects.png" width="300"> 
 
