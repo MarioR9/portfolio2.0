@@ -16,14 +16,14 @@ demo here
 
 ## General info
 
-My first portfolio site, it is powered by React, HTML, CSS, and bootstrap UI. The website is host by Heroku. It Holds my basic information as well as some of my projects and a contact component that will email me whenever someone tries to get in touch with me.
+It is a single page application powered by React, HTML, CSS, and Bootstrap UI. The website is host by firebase. Multiple pages containing information about me and some of my projects.
 	
 ## Technologies
 
 Project is created with:
 * React 
 * HTML
-* SCSS
+* CSS
 * BootstrapUI
 
 
