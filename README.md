@@ -8,7 +8,7 @@
 ## Portfolio website
 
 
-[![Generic badge](https://img.shields.io/badge/Live-Web-blue.svg)](https://portfolio-7f8cc.web.app/home)&nbsp;
+[![Generic badge](https://img.shields.io/badge/Live-Web-blue.svg)](https://mariorod9.web.app/)&nbsp;
 
 ## Table of contents
 * [General info](#general-info)
